@@ -1,3 +1,9 @@
 language: ruby
 rvm:
   - 2.2.0
+  - 2.1.0
+addons:
+  code_climate:
+    repo_token: 612f764715420a0d0dad4ea5ec5e131e0cfc6fd232b61b4562ca9f6001076e79
+before_install:
+  - gem install bundler --version "1.8"
