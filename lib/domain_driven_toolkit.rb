@@ -1,6 +1,7 @@
 require 'domain_driven_toolkit/version'
 
 module DomainDrivenToolkit
+  require 'domain_driven_toolkit/application'
   require 'domain_driven_toolkit/value'
   require 'domain_driven_toolkit/entity'
   require 'domain_driven_toolkit/service'
@@ -10,6 +11,10 @@ module DomainDrivenToolkit
   class << self
     def version
       VERSION
+    end
+
+    def application
+      Application
     end
 
     def value

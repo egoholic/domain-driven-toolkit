@@ -11,6 +11,12 @@ RSpec.describe DomainDrivenToolkit do
     end
   end
 
+  describe '#application' do
+    it 'returns class Application' do
+      expect(subject.application).to be described_class::Application
+    end
+  end
+
   describe '#value' do
     it 'returns class Value' do
       expect(subject.value).to be described_class::Value
