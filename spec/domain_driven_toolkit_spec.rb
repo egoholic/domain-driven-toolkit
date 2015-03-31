@@ -28,4 +28,10 @@ RSpec.describe DomainDrivenToolkit do
       expect(subject.structures).to be described_class::Structures
     end
   end
+
+  describe '#traits' do
+    it 'returns module Traits' do
+      expect(subject.traits).to be described_class::Traits
+    end
+  end
 end

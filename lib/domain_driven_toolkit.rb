@@ -1,9 +1,10 @@
 require 'domain_driven_toolkit/version'
 
 module DomainDrivenToolkit
+  require 'domain_driven_toolkit/traits'
+  require 'domain_driven_toolkit/structures'
   require 'domain_driven_toolkit/application'
   require 'domain_driven_toolkit/patterns'
-  require 'domain_driven_toolkit/structures'
 
   class << self
     def version
@@ -20,6 +21,10 @@ module DomainDrivenToolkit
 
     def structures
       Structures
+    end
+
+    def traits
+      Traits
     end
   end
 end
