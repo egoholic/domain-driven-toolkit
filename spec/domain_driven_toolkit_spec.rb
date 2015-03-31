@@ -23,4 +23,9 @@ RSpec.describe DomainDrivenToolkit do
     end
   end
 
+  describe '#structures' do
+    it 'returns module Structures' do
+      expect(subject.structures).to be described_class::Structures
+    end
+  end
 end
