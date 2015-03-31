@@ -1,5 +1,5 @@
 module DomainDrivenToolkit
-  class Application
+  module Traits
 
   end
 end
