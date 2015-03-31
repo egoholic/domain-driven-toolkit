@@ -2,11 +2,8 @@ require 'domain_driven_toolkit/version'
 
 module DomainDrivenToolkit
   require 'domain_driven_toolkit/application'
-  require 'domain_driven_toolkit/value'
-  require 'domain_driven_toolkit/entity'
-  require 'domain_driven_toolkit/service'
-  require 'domain_driven_toolkit/factory'
-  require 'domain_driven_toolkit/repository'
+  require 'domain_driven_toolkit/patterns'
+  require 'domain_driven_toolkit/structures'
 
   class << self
     def version
@@ -17,25 +14,12 @@ module DomainDrivenToolkit
       Application
     end
 
-    def value
-      Value
+    def patterns
+      Patterns
     end
 
-    def entity
-      Entity
-    end
-
-    def service
-      Service
-    end
-
-    def factory
-      Factory
-    end
-
-    def repository
-      Repository
+    def structures
+      Structures
     end
   end
-
 end

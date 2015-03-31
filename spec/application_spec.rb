@@ -1,3 +1,3 @@
-RSpec.describe DomainDrivenToolkit.entity do
+RSpec.describe DomainDrivenToolkit.application do
 
 end
